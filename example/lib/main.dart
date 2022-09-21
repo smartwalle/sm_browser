@@ -38,11 +38,15 @@ class _HomePageState extends State<HomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: TextButton(
-          child: const Text("打开 baidu (仅在浏览器中有用)"),
-          onPressed: () {
-            KIBrowser.location.replace("https://www.baidu.com");
-          },
+        child: Column(
+          children: [
+            TextButton(
+              child: const Text("打开 baidu (仅在浏览器中有用)"),
+              onPressed: () {
+                KIBrowser.location.replace("https://www.baidu.com");
+              },
+            ),
+          ],
         ),
       ),
     );
