@@ -1,1 +1,1 @@
-Broswer
+Browser
