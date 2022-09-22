@@ -1,3 +1,7 @@
+class KIWindow {
+  void open(String url) {}
+}
+
 class KIHistory {
   void replace(String? url) {}
 }

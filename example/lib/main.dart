@@ -41,9 +41,15 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             TextButton(
-              child: const Text("打开 baidu (仅在浏览器中有用)"),
+              child: const Text("当前标签中打开 baidu (仅在浏览器中有用)"),
               onPressed: () {
                 KIBrowser.location.replace("https://www.baidu.com");
+              },
+            ),
+            TextButton(
+              child: const Text("新标签中打开 baidu (仅在浏览器中有用)"),
+              onPressed: () {
+                KIBrowser.window.open("https://www.baidu.com");
               },
             ),
           ],
